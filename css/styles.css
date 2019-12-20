@@ -9,7 +9,7 @@
     text-align: center;
     font-family: 'Roboto', sans-serif;
     color: #222;
-    background: #f7f5f0;
+    background: #000000;
   }
   /* Link Styles */
   
@@ -126,6 +126,7 @@
     top: -8px;
     margin-right: 20px;
     font-size: .75em;
+    color: #efefef;
   }
   
   footer ul {
@@ -138,30 +139,25 @@
     display: inline-block;
   }
   
-  a.social {
-    display: inline-block;
-    text-indent: -9999px;
-    margin-left: 5px;
-    width: 30px;
-    height: 30px;
-    background-size: 30px 30px;
-    opacity: .5;
-    transition: all .25s;
+  .fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
   }
-  a.twitter {
-    background-image: url(images/twitter.svg);
+  
+  .fa:hover {
+      opacity: 0.7;
   }
-  a.linkedin {
-    background-image: url(images/linkedin.svg);
+  
+  .fa-facebook {
+    color: white;
   }
-  a.github {
-    background-image: url(images/github.svg);
-  }
-  a.social:hover {
-    opacity: 1;
-  }
-  .clearfix {
-    clear: both;
+  
+  .fa-instagram {
+    color: white;
   }
   
   /* Styles for larger screens */
