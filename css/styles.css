@@ -1,125 +1,73 @@
-/* Global Layout Set-up */
-* { 
-    box-sizing: border-box;
-  }
-    
-  body {
-    margin: 0;
-    padding: 0;
-    text-align: center;
-    font-family: 'Roboto', sans-serif;
-    color: #222;
-    background: #000000;
-  }
-  /* Link Styles */
-  
-  a {
-    text-decoration: none;
-    color: #0499ff;
-  }
-  a:hover {
-    color: #6633ff;
-  }
-  
-  /* Section Styles */
-  
-  .main-nav {
-    width: 100%;
-    background: black;
-    min-height: 30px;
-    padding: 10px;
-    position: fixed;
-    text-align: center;
-  }
-  .nav {
-    display: flex;
-    justify-content: space-around;
-    font-weight: 700;
-    list-style-type: none;
-    margin: 0 auto;
-    padding: 0;
-  }
-  .nav .name {
-    display: none;
-  }
-  .nav li {
-    padding: 5px 10px 10px 10px;
-  }
-  .nav a {
-    transition: all .5s;
-  }
-  .nav a:hover {
-    color: white
-  }
-  
-  header {
-    text-align: center;
-    background: url('images/portland.jpg') no-repeat top center ;
-    background-size: cover;
-    overflow: hidden;
-    padding-top: 60px;
-  }
-  header {
-    line-height: 1.5;
-  }
-  header .profile-image {
-    margin-top: 50px;
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    border: 3px solid white;
-    transition: all .5s;
-  }
-  header .profile-image:hover {
-    transform: scale(1.2) rotate(5deg);
-  }
-  .tag {
-    background-color: #efefef;
-    color: black;
-    padding: 10px;
-    border-radius: 5px;
-    display: table;
-    margin: 10px auto;
-  } 
-  .location {
-    background-color: #222;
-    color: yellow;
-  }
-  .card {
-    margin: 30px;
-    padding: 20px 40px 40px;
-    max-width: 500px;
-    text-align: left;
-    background: #fff;
-    border-bottom: 4px solid #ccc;
-    border-radius: 6px;
-  }
-  .card:hover {
-    border-color: #ff99ff;
-  }
-  
-  ul.skills {
-    padding: 0;
-    text-align: center;
-  }
-  
-  .skills li {
-    border-radius: 6px;
-    display: inline-block;
-    background: #ff9904;
+/* Style the header with a grey background and some padding */
+.header {
+    background-color: black; /* Grey background */
     color: white;
-    padding: 5px 10px;
-    margin: 2px;
+    text-align: center; /* Centered text */
+    font-size: 90px; /* Big font size */
+    font-weight: bold;
+    position: fixed; /* Fixed position - sit on top of the page */
+    top: 0;
+    width: 100%; /* Full width */
+    transition: 0.2s; /* Add a transition effect (when scrolling - and font size is decreased) */
   }
   
-  .skills li:nth-child(odd) {
-    background: #0399ff;
+  /* Style the header links */
+  .header a {
+    float: left;
+    color: black;
+    text-align: center;
+    padding: 12px;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 25px;
+    border-radius: 4px;
   }
   
+  /* Style the logo link (notice that we set the same value of line-height and font-size to prevent the header to increase when the font gets bigger */
+  .header a.logo {
+    font-size: 25px;
+    font-weight: bold;
+    text-align: left;
+  }
+  
+  /* Change the background color on mouse-over */
+  .header a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  /* Style the active/current link*/
+  .header a.active {
+    background-color: dodgerblue;
+    color: white;
+  }
+  
+  /* Float the link section to the right */
+  .header-right {
+    float: right;
+  }
+  
+  /* Add media queries for responsiveness - when the screen is 500px wide or less, stack the links on top of each other */
+  @media screen and (max-width: 500px) {
+    .header a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+    .header-right {
+      float: none;
+    }
+  }
+
+.flex {
+    background: white;
+}
+
   footer {
     width: 100%;
     min-height: 30px;
     padding: 20px 0 40px 20px;
+    background: black;
   }
   
   footer .copyright {
@@ -159,45 +107,3 @@
   .fa-instagram {
     color: white;
   }
-  
-  /* Styles for larger screens */
-  @media screen and (min-width: 720px) {
-    
-    .flex {
-        display: flex;
-        max-width: 1200px;
-        justify-content: space-around;
-        margin: 0 auto;
-    }
-  
-    header {
-      min-height: 450px;
-    }
-  
-    .nav {
-      max-width: 1200px;
-    }
-  
-    .nav .name {
-      display: block;
-      margin-right: auto;
-      color: white;
-    }
-  
-    main {
-      padding-top: 50px;
-    }
-  
-    main p {
-      line-height: 1.6em;
-    }
-  
-    footer {
-      font-size: 1.3em;
-      max-width: 1200px;
-      margin: 40px auto;
-    }
-  
-  }
-  
-  
