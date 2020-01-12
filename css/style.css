@@ -6247,7 +6247,8 @@ button.bg-dark:focus {
 
 .pb-2,
 .py-2 {
-  padding-bottom: 0.5rem !important; }
+  padding-bottom: 0.5rem !important;
+  color: rgba(255, 255, 255, 0.7); }
 
 .pl-2,
 .px-2 {
@@ -7380,14 +7381,14 @@ h1, h2, h3, h4, h5,
     left: 0;
     top: 0;
     margin-top: -130px;
-    background: #fff !important;
+    background: #000000 !important;
     -webkit-box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
     box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1); }
     .ftco-navbar-light.scrolled .nav-item.active > a {
-      color: #ee76ad !important; }
+      color: #b666d2 !important; }
     .ftco-navbar-light.scrolled .nav-item.cta > a {
       color: #fff !important;
-      background: #ee76ad;
+      background: #b666d2;
       border: none !important;
       padding-top: 0.5rem !important;
       padding-bottom: .5rem !important;
@@ -7425,7 +7426,7 @@ h1, h2, h3, h4, h5,
     .ftco-navbar-light.scrolled .nav-link {
       padding-top: 0.9rem !important;
       padding-bottom: 0.9rem !important;
-      color: #404044 !important; }
+      color: #fff !important; }
       .ftco-navbar-light.scrolled .nav-link.active {
         color: #ee76ad !important; }
     .ftco-navbar-light.scrolled.awake {
@@ -7438,7 +7439,7 @@ h1, h2, h3, h4, h5,
       -o-transition: .3s all ease-out;
       transition: .3s all ease-out; }
     .ftco-navbar-light.scrolled .navbar-brand {
-      color: #404044; }
+      color: #fff; }
 
 .navbar-brand {
   font-weight: 700;
@@ -7607,13 +7608,13 @@ h1, h2, h3, h4, h5,
   .btn:hover, .btn:active, .btn:focus {
     outline: none; }
   .btn.btn-primary {
-    background: #fce7f1;
-    border: 2px solid #fce7f1;
-    color: #ee76ad; }
+    background: #b666d2;
+    border: 2px solid #fff;
+    color: #fff; }
     .btn.btn-primary:hover {
-      border: 2px solid #ee76ad;
+      border: 2px solid #b666d2;
       background: transparent;
-      color: #ee76ad; }
+      color: #b666d2; }
     .btn.btn-primary.btn-outline-primary {
       border: 2px solid #ee76ad;
       background: transparent;
@@ -8116,7 +8117,7 @@ textarea.form-control {
 
 .ftco-footer {
   font-size: 16px;
-  background: #ee76ad;
+  background: #b666d2;
   padding: 12em 0 8em 0; }
   .ftco-footer .ftco-footer-logo {
     text-transform: uppercase;
