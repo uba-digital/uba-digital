@@ -406,6 +406,11 @@ mark,
   max-width: 100%;
   height: auto; }
 
+.uba-logo {
+  width: 80px;
+  height: 80px;
+}
+
 .figure {
   display: inline-block; }
 
